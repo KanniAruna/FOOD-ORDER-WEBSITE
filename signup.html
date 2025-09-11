@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Foodie Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\SSN\Downloads\FOOD_ORDER\img\logo.png" alt="Foodie Express Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="menu.html">Foods</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h2>Create Account</h2>
+        <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="signupUsername" required placeholder="Enter Username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="signupPassword" required placeholder="Enter Password">
+
+            <button type="submit">Sign Up</button>
+            <p class="signup-text">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(e){
+            e.preventDefault();
+            let username = document.getElementById("signupUsername").value;
+            let password = document.getElementById("signupPassword").value;
+
+            localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+
+            alert("Account Created Successfully! Please Login.");
+            window.location.href = "login.html";
+        });
+    </script>
+
+
+
+
+</body>
+</html>
+
+
+</body>
+</html>

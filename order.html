@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Foodie Express </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="menu.html">Foods</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+    <h2 class="tag">Fill this form to confirm your order.</h2>
+<table border="1" width="100%" id="order-table">
+    <tr>
+        <th>S.N.</th>
+        <th>Food</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+        <th>Action</th>
+    </tr>
+</table>
+<h3 class="tag1">Total: $<span id="grand-total">0</span></h3>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let table = document.getElementById("order-table");
+let grandTotal = 0;
+
+cart.forEach((item, index) => {
+    let total = item.price * item.qty;
+    grandTotal += total;
+    let row = `
+        <tr>
+            <td>${index + 1}</td>
+            <td><img src="${item.img}" width="50"></td>
+            <td>${item.name}</td>
+            <td>$${item.price.toFixed(2)}</td>
+            <td>${item.qty}</td>
+            <td>$${total.toFixed(2)}</td>
+            <td><button onclick="removeItem(${index})">X</button></td>
+        </tr>
+    `;
+    table.innerHTML += row;
+});
+
+document.getElementById("grand-total").innerText = grandTotal.toFixed(2);
+
+function removeItem(i) {
+    cart.splice(i, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    location.reload();
+}
+</script>
+
+
+
+<!-- Delivery Details Form -->
+<h2 class="form-title">Delivery Details</h2>
+<form id="orderForm" class="order-form">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required placeholder="Enter your delivery address"></textarea>
+
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="COD">Cash on Delivery</option>
+        <option value="Online">Online Payment</option>
+    </select>
+
+    <button type="submit" class="place-order">Place Order</button>
+</form>
+
+<!-- Success Alert Script -->
+<script>
+document.getElementById("orderForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Order placed successfully! Thank you for ordering.");
+    // Here you can also clear the cart or redirect to another page
+});
+</script>
+
+</body>
+</html>
+

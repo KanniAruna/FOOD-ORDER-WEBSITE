@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Foodie Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\SSN\Downloads\FOOD_ORDER\img\logo.png" alt="Foodie Express Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="menu.html">Foods</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+           
+        </nav>
+    </header>
+
+    <h2 class="page-title">Contact Us</h2>
+
+    <!-- Contact Info Section -->
+    <div class="contact-info">
+        <p><strong>Address:</strong> 123 Food Street, Chennai, India</p>
+        <p><strong>Phone:</strong> 7418778248</p>
+        <p><strong>Email:</strong> foodieexpress@gmail.com</p>
+    </div>
+
+    <!-- Contact Form Section -->
+    <form class="contact-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Optional Google Map -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.410104520853!2d80.230665!3d13.082680!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265f555555555%3A0x1234567890abcdef!2sChennai!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <script>
+        document.querySelector(".contact-form").addEventListener("submit", function(e){
+            e.preventDefault();
+            alert("Your message has been sent!");
+        });
+    </script>
+</body>
+</html>
