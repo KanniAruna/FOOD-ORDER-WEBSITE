@@ -54,6 +54,40 @@ Admins can manage menu items and view orders through the admin panel.”
 
 
 
+### 📸 Screenshots
+
+### Sign up page
+<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Sign up page" width="400">
+
+### Login page
+<img src="/mnt/data/39d86c7f-a822-43b8-8850-5b9066609c80.png" alt="Login page" width="400">
+
+### Home page
+<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Home page" width="400">
+
+### Food categories page
+<img src="/mnt/data/39d86c7f-a822-43b8-8850-5b9066609c80.png" alt="Food categories page" width="400">
+
+### Food menu page
+<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Food menu page" width="400">
+
+### Order page
+<img src="/mnt/data/39d86c7f-a822-43b8-8850-5b9066609c80.png" alt="Order page" width="400">
+
+### Contact page
+<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Contact page" width="400">
+
+### Admin login page 
+<img src="/mnt/data/39d86c7f-a822-43b8-8850-5b9066609c80.png" alt="Admin login page" width="400">
+
+### Order details
+<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Order details" width="400">
+
+
+
+
+
+
 
 
 
