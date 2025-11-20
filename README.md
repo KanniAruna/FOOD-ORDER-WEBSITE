@@ -24,10 +24,11 @@ Admins can manage menu items and view orders through the admin panel.”
 
 ### 📸 Screenshots
 ### Sign up page
-<img width="500"  alt="Screenshot 2025-11-20 101939" src="https://github.com/user-attachments/assets/64fedd10-2cbc-494e-a64a-16b39ed3b92e" />
+<img width="800" height="800" alt="Screenshot 2025-11-20 101939" src="https://github.com/user-attachments/assets/64fedd10-2cbc-494e-a64a-16b39ed3b92e" />
+------
 
 ### Login page
-<img width="500"  alt="Screenshot 2025-11-20 101947" src="https://github.com/user-attachments/assets/c75d3f37-3e26-4302-81a1-0a84e73ae2d9" />
+<img width="800" height="800" alt="Screenshot 2025-11-20 101947" src="https://github.com/user-attachments/assets/c75d3f37-3e26-4302-81a1-0a84e73ae2d9" />
 
 ### Home page
 <img width="1000" height="1000" alt="Screenshot 2025-11-20 101612" src="https://github.com/user-attachments/assets/2f1b8171-ea86-4681-a3aa-4c7861e6a830" />
