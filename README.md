@@ -24,10 +24,10 @@ Admins can manage menu items and view orders through the admin panel.”
 
 ### 📸 Screenshots
 ### Sign up page
-<img width="1000" height="1000" alt="Screenshot 2025-11-20 101939" src="https://github.com/user-attachments/assets/64fedd10-2cbc-494e-a64a-16b39ed3b92e" />
+<img width="500"  alt="Screenshot 2025-11-20 101939" src="https://github.com/user-attachments/assets/64fedd10-2cbc-494e-a64a-16b39ed3b92e" />
 
 ### Login page
-<img width="1000" height="1000" alt="Screenshot 2025-11-20 101947" src="https://github.com/user-attachments/assets/c75d3f37-3e26-4302-81a1-0a84e73ae2d9" />
+<img width="500"  alt="Screenshot 2025-11-20 101947" src="https://github.com/user-attachments/assets/c75d3f37-3e26-4302-81a1-0a84e73ae2d9" />
 
 ### Home page
 <img width="1000" height="1000" alt="Screenshot 2025-11-20 101612" src="https://github.com/user-attachments/assets/2f1b8171-ea86-4681-a3aa-4c7861e6a830" />
@@ -49,40 +49,6 @@ Admins can manage menu items and view orders through the admin panel.”
 
 ### Order details
 <img width="1000" height="1000" alt="Screenshot 2025-11-20 102027" src="https://github.com/user-attachments/assets/80c70128-938a-42fe-8a90-6bd0b5e1244e" />
-
-
-
-
-
-### 📸 Screenshots
-
-### Sign up page
-<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Sign up page" width="400">
-
-### Login page
-<img src="/mnt/data/39d86c7f-a822-43b8-8850-5b9066609c80.png" alt="Login page" width="400">
-
-### Home page
-<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Home page" width="400">
-
-### Food categories page
-<img src="/mnt/data/39d86c7f-a822-43b8-8850-5b9066609c80.png" alt="Food categories page" width="400">
-
-### Food menu page
-<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Food menu page" width="400">
-
-### Order page
-<img src="/mnt/data/39d86c7f-a822-43b8-8850-5b9066609c80.png" alt="Order page" width="400">
-
-### Contact page
-<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Contact page" width="400">
-
-### Admin login page 
-<img src="/mnt/data/39d86c7f-a822-43b8-8850-5b9066609c80.png" alt="Admin login page" width="400">
-
-### Order details
-<img src="/mnt/data/93a59f89-ca82-4532-b27a-bf95ac85c453.png" alt="Order details" width="400">
-
 
 
 
