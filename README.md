@@ -6,11 +6,11 @@ Data is stored using database models inside the backend.
 When a user signs up or orders food, the frontend sends a request to the backend API, backend verifies it, stores the data, and responds back.
 Admins can manage menu items and view orders through the admin panel.”
 
-###👤User Features
-User Signup
-User Login
-Browse Food Menu
-Place Food Orders
+### 👤User Features
+- User Signup
+- User Login
+- Browse Food Menu
+- Place Food Orders
 
 ### 👤Admin Features 
 Admin Login
