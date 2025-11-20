@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Order List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;   /* Single border */
+            text-align: center;          /* Center align content */
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 2px solid black;     /* Clear border */
+        }
+
+        th, td {
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        th {
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>All Orders</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Items</th>
+                <th>Total</th>
+                <th>Address</th>
+                <th>Payment</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="orderTable"></tbody>
+    </table>
+
+    <script>
+    fetch("http://localhost:5000/admin/orders")
+        .then(res => res.json())
+        .then(data => {
+            const table = document.getElementById("orderTable");
+            table.innerHTML = "";
+
+            data.forEach(order => {
+
+                // Calculate total from items
+                let total = 0;
+                order.items.forEach(item => {
+                    total += (Number(item.price) || 0) * (Number(item.qty) || 0);
+                });
+
+                let row = `
+                    <tr>
+                        <td>${order.userId}</td>
+                        <td>${order.items.map(i => `${i.name} (x${i.qty})`).join("<br>")}</td>
+                        <td>${total}</td>
+                        <td>${order.address}</td>
+                        <td>${order.payment ?? "Not Provided"}</td>
+                        <td>${new Date(order.createdAt).toLocaleString()}</td>
+                    </tr>
+                `;
+
+                table.innerHTML += row;
+            });
+        })
+        .catch(err => console.error("Error loading admin orders:", err));
+
+
+    </script>
+
+</body>
+</html>
